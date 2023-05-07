@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid con columnas y altura personalizada</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: ". middle ." "left middle right";
+      grid-gap: 20px;
+    }
+
+    .grid-item {
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .middle {
+      grid-area: middle;
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item" style="grid-area: left;">
+
+      <div id="noticia">
+        <h2>Columna 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu ipsum et enim ullamcorper cursus nec nec massa.</p>
+      </div>
+
+      <div id="noticia">
+        <h2>Columna 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu ipsum et enim ullamcorper cursus nec nec massa.</p>
+      </div>
+
+      <div id="noticia">
+        <h2>Columna 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu ipsum et enim ullamcorper cursus nec nec massa.</p>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="grid-item middle">
+      <div id="noticia-medio">
+        <h2>Segundo, Francia</h2>
+        <article id="article-grande">
+          <picture id="picture">
+              <img id="img" src="imagenes/seleccion.jpg" alt="">
+          </picture>
+          <br>
+          <h5><b>Queridos, queridas y querides deudores:</b></h5>
+          <p>Estoy sorprendido, o tal vez estupefacto, o levemente confuso, o inevitablemente desorientado, o superfluamente patitieso, pero de ninguna manera peripatético. Había que decirlo.</p>
+          </article>
+      </div>
+    </div>
+
+
+
+
+    <div class="grid-item" style="grid-area: right;">
+
+      <div id="noticia">
+        <h2>Columna 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu ipsum et enim ullamcorper cursus nec nec massa.</p>
+      </div>
+
+
+      <div id="noticia">
+        <h2>Columna 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu ipsum et enim ullamcorper cursus nec nec massa.</p>
+      </div>
+
+      <div id="noticia">
+        <h2>Columna 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu ipsum et enim ullamcorper cursus nec nec massa.</p>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</body>
+</html>
+
+
