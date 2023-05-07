@@ -2,6 +2,8 @@ pre{
     font-size: 500px;
 }
 
+
+
 #grid-pag{
     margin: 20px;
     display: grid;
@@ -13,6 +15,38 @@ pre{
     color: rgb(0, 0, 0);
     text-decoration:none;
 }
+
+
+#footer{
+    background-color: #f2f2f2;
+
+    color: #555;
+}
+
+
+#footer-div{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+#titulo-footer{
+    justify-content: center;
+    display: flex;
+}
+
+
+ #footer-nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+  #footer-nav a {
+    text-decoration: none;
+    color: #555;
+  }
+
+
 
 #img-pag{
     max-width: 850px;
