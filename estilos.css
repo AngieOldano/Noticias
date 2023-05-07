@@ -61,8 +61,8 @@
 }
 
 #img-pag{
-    max-width: 850px;
-    max-height: 850px;
+    width: 100%;
+    display: block;
 }
 
 #grid-pag{
@@ -107,8 +107,8 @@
 }
 
 #picture{
-    display: flex;
-    justify-content: center;
+    position:relative;
+    overflow: hidden;
 }
 
 pre{
