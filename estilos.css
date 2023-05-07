@@ -22,6 +22,14 @@
     margin: 10px;
 }
 
+#vivo{
+
+    animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+        font-size: 50px;
+        color: red;
+   }
+
+
 #noticia-medio {
     grid-area: middle;
     grid-column: 2 / 3;
@@ -60,3 +68,18 @@
 #p{
     display: flex;
 }
+
+@keyframes blink {  
+    0% { color: red; }
+    100% { color: #f0f0f0; }
+  }
+  @-webkit-keyframes blink {
+    0% { color: red; }
+    100% { color: #f0f0f0; }
+  }
+  .blink {
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+  }
+
